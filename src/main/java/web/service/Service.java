@@ -15,4 +15,12 @@ public class Service {
         cars.add(new Car("Mercedes", "SLK", 2022));
         return cars;
     }
+
+    public List<Car> carChosenList(int x){
+        List<Car> list = new ArrayList<>();
+        for (int i=0; i<x && i<5;i++ ){
+            list.add(addFiveCars().get(i));
+        }
+        return list;
+    }
 }
