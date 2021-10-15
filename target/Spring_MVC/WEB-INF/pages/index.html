@@ -7,9 +7,15 @@
 </head>
 <body>
 <div>
-    <th:block th:each="msg : ${messages}">
-        <h1 th:text="${msg}"></h1>
-        <h1><a href="/spring_mvc_war_exploded/cars">Link to CARS</a></h1>
+    <th:block>
+        <h1><a href="/spring_mvc_war_exploded/cars">Link to all CARS</a></h1>
+        <h1><a href="/spring_mvc_war_exploded/cars?count=1">Link to 1 car</a></h1>
+        <h1><a href="/spring_mvc_war_exploded/cars?count=2">Link to 2 cars</a></h1>
+        <h1><a href="/spring_mvc_war_exploded/cars?count=3">Link to 3 cars</a></h1>
+        <h1><a href="/spring_mvc_war_exploded/cars?count=4">Link to 4 cars</a></h1>
+        <h1><a href="/spring_mvc_war_exploded/cars?count=5">Link to 5 cars</a></h1>
+        <h1><a href="/spring_mvc_war_exploded/cars?count=6">Link to 6 (>5) cars</a></h1>
+        <h1><a href="/spring_mvc_war_exploded/cars?count=0">Link to 0 cars</a></h1>
     </th:block>
 </div>
 </body>
